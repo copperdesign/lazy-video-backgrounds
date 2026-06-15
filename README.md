@@ -1,4 +1,4 @@
-# lazy-video-backgrounds
+# @copperdesign/lazy-video-backgrounds
 
 Sequentially-looping background-video playlist with progressive lazy loading and pause-when-offscreen.
 
@@ -18,7 +18,7 @@ Drop a row of `<video>` elements into a container, point this at the container, 
 </div>
 
 <script type="module">
-  import lazyVideoBackgrounds from 'lazy-video-backgrounds';
+  import lazyVideoBackgrounds from '@copperdesign/lazy-video-backgrounds';
   lazyVideoBackgrounds(document.getElementById('hero'));
 </script>
 ```
@@ -36,7 +36,7 @@ That's the whole API.
 ## Install
 
 ```sh
-npm install lazy-video-backgrounds
+npm install @copperdesign/lazy-video-backgrounds
 ```
 
 Or vendor [`index.js`](./index.js) directly — it's a single file with no dependencies.
@@ -44,7 +44,7 @@ Or vendor [`index.js`](./index.js) directly — it's a single file with no depen
 ## API
 
 ```js
-import lazyVideoBackgrounds from 'lazy-video-backgrounds';
+import lazyVideoBackgrounds from '@copperdesign/lazy-video-backgrounds';
 
 const teardown = lazyVideoBackgrounds(root, options);
 ```

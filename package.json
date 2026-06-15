@@ -1,5 +1,5 @@
 {
-  "name": "lazy-video-backgrounds",
+  "name": "@copperdesign/lazy-video-backgrounds",
   "version": "0.1.0",
   "description": "Sequentially-looping background-video playlist with progressive lazy loading and pause-when-offscreen.",
   "type": "module",
@@ -31,5 +31,9 @@
   "homepage": "https://github.com/copperdesign/lazy-video-backgrounds#readme",
   "bugs": {
     "url": "https://github.com/copperdesign/lazy-video-backgrounds/issues"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
   }
 }
