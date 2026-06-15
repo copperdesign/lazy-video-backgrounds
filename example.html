@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>lazy-video-backgrounds — example</title>
+	<style>
+		body { margin: 0; font-family: system-ui, sans-serif; color: #1a1a1a; background: #fafafa; }
+		.hero {
+			position: relative;
+			width: 100vw;
+			height: 100vh;
+			overflow: hidden;
+			background: #000;
+		}
+		.hero video {
+			position: absolute;
+			inset: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			opacity: 0;
+			transition: opacity 300ms ease-out;
+		}
+		.hero video.is-playing { opacity: 1; }
+		.hero h1 {
+			position: absolute;
+			inset: auto 0 2rem 0;
+			text-align: center;
+			color: #fff;
+			font-weight: 300;
+			letter-spacing: -0.02em;
+			text-shadow: 0 1px 8px rgba(0,0,0,0.4);
+		}
+		.scroll-test {
+			padding: 4rem 2rem;
+			max-width: 40rem;
+			margin: 0 auto;
+		}
+		.scroll-test p { line-height: 1.6; }
+	</style>
+</head>
+<body>
+
+<section class="hero" id="hero">
+	<!-- Drop your clips in here. preload="auto" + muted + playsinline are required. -->
+	<video preload="auto" muted playsinline>
+		<source src="clips/1.mp4" type="video/mp4">
+	</video>
+	<video preload="auto" muted playsinline>
+		<source src="clips/2.mp4" type="video/mp4">
+	</video>
+	<video preload="auto" muted playsinline>
+		<source src="clips/3.mp4" type="video/mp4">
+	</video>
+	<h1>lazy-video-backgrounds</h1>
+</section>
+
+<section class="scroll-test">
+	<h2>Scroll down to test the offscreen pause</h2>
+	<p>Scroll the hero out of view. The active video pauses. Scroll back, it resumes. No scroll listeners — just one <code>IntersectionObserver</code>.</p>
+</section>
+
+<script type="module">
+	import lazyVideoBackgrounds from './index.js';
+	lazyVideoBackgrounds(document.getElementById('hero'));
+</script>
+
+</body>
+</html>

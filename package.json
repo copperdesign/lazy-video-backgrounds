@@ -1,0 +1,35 @@
+{
+  "name": "lazy-video-backgrounds",
+  "version": "0.1.0",
+  "description": "Sequentially-looping background-video playlist with progressive lazy loading and pause-when-offscreen.",
+  "type": "module",
+  "main": "index.js",
+  "module": "index.js",
+  "exports": {
+    ".": "./index.js"
+  },
+  "files": [
+    "index.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "video",
+    "background",
+    "hero",
+    "playlist",
+    "lazy",
+    "loop",
+    "intersection-observer"
+  ],
+  "author": "Christian Fillies <christian@manolab.com> (https://christianfillies.com)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/copperdesign/lazy-video-backgrounds.git"
+  },
+  "homepage": "https://github.com/copperdesign/lazy-video-backgrounds#readme",
+  "bugs": {
+    "url": "https://github.com/copperdesign/lazy-video-backgrounds/issues"
+  }
+}
