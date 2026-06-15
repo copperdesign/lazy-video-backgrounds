@@ -1,5 +1,14 @@
 node_modules/
-.DS_Store
 *.log
+.DS_Store
+.idea/
+.vscode/
 .env
+.env.local
+
+# Local example playback assets — clips dropped next to example.html for
+# quick visual checks. Real published assets live elsewhere.
 example.html.clips/
+
+# Local Claude Code workspace — agent notes, transcripts, scratch.
+.claude/

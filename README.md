@@ -113,6 +113,18 @@ A common hero pattern: several short clips that play back-to-back as a moving ba
 
 This module fixes both: it seeds readiness from `readyState` *and* listens for the event, and it actively triggers `next.load()` when the current clip starts playing.
 
+## Contributing
+
+PRs and issues welcome. See [CONTRIBUTING.md](CONTRIBUTING.md) for setup,
+the PR workflow, and what fits the scope of the module. The repo follows
+the [Contributor Covenant](CODE_OF_CONDUCT.md).
+
+Quick version: fork, branch off `main`, exercise your change against
+`example.html` in at least one non-Chromium browser, open a PR. I
+(@copperdesign) review and merge.
+
 ## License
 
 MIT — see [LICENSE](./LICENSE).
+
+Created by [Christian Fillies](https://www.christianfillies.de).
