@@ -1,5 +1,9 @@
 # @copperdesign/lazy-video-backgrounds
 
+[![npm version](https://img.shields.io/npm/v/@copperdesign/lazy-video-backgrounds.svg)](https://www.npmjs.com/package/@copperdesign/lazy-video-backgrounds)
+[![bundle size](https://img.shields.io/bundlephobia/minzip/@copperdesign/lazy-video-backgrounds)](https://bundlephobia.com/package/@copperdesign/lazy-video-backgrounds)
+[![license](https://img.shields.io/npm/l/@copperdesign/lazy-video-backgrounds.svg)](./LICENSE)
+
 Sequentially-looping background-video playlist with progressive lazy loading and pause-when-offscreen.
 
 Drop a row of `<video>` elements into a container, point this at the container, and they'll play one at a time, loop the current one while the next buffers, and pause automatically when you scroll away. No framework. No build step. ~1 KB minified.
