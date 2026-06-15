@@ -1,8 +1,10 @@
-/**@preserve
- * lazy-video-backgrounds
- * by Christian Fillies <christian@manolab.com>
- * MIT License
+/*! lazy-video-backgrounds — v0.1.0 - 2026-06-15
+ * https://copperdesign.github.io/
  *
+ * Copyright (c) 2026 Christian Fillies;
+ * Licensed under the MIT license */
+
+/**
  * Sequentially-looping background-video playlist.
  *
  * Given a root element with N <video> children, plays one at a time and
