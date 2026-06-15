@@ -123,6 +123,29 @@ Quick version: fork, branch off `main`, exercise your change against
 `example.html` in at least one non-Chromium browser, open a PR. I
 (@copperdesign) review and merge.
 
+## Releasing (maintainer notes)
+
+The package is published to npm as
+[`@copperdesign/lazy-video-backgrounds`](https://www.npmjs.com/package/@copperdesign/lazy-video-backgrounds)
+and installable in any project with:
+
+```sh
+npm install @copperdesign/lazy-video-backgrounds
+```
+
+For future releases:
+
+```sh
+npm version patch        # or minor / major — bumps package.json, commits, tags vX.Y.Z
+git push --follow-tags
+gh release create vX.Y.Z --generate-notes
+```
+
+The `release.yml` GitHub Actions workflow handles the rest: it smoke-checks
+the module, verifies the tag matches `package.json`, and publishes to npm
+with provenance. Requires an `NPM_TOKEN` repo secret minted from the
+`copperdesign` npm account.
+
 ## License
 
 MIT — see [LICENSE](./LICENSE).
