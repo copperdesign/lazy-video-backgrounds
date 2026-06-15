@@ -154,4 +154,4 @@ with provenance. Requires an `NPM_TOKEN` repo secret minted from the
 
 MIT — see [LICENSE](./LICENSE).
 
-Created by [Christian Fillies](https://www.christianfillies.de).
+Created by [Christian Fillies](https://www.christianfillies.com).
